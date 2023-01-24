@@ -1,21 +1,28 @@
 :root {
   --green: #00ff00;
   --white: #ffffff;
+  --light-grey: #eeeeee;
+  --light-black: #2d2d2d;
   --black: #000000;
+  --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .light-theme {
   --bg: var(--white);
+  --container-bg: var(--light-grey);
   --fontColor: var(--black);
   --btnBg: var(--black);
   --btnFontColor: var(--white);
+  --box-shadow: var(--shadow);
 }
 
 .dark-theme {
   --bg: var(--black);
+  --container-bg: var(--light-black);
   --fontColor: var(--green);
   --btnBg: var(--white);
   --btnFontColor: var(--black);
+  --box-shadow: var(--shadow);
 }
 
 * {
@@ -37,7 +44,9 @@ body {
   gap: 10px;
   padding: 25px;
   width: 300px;
+  border-radius: 10px;
   min-height: fit-content;
+  background-color: var(--container-bg);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   align-items: center;
 }
@@ -72,6 +81,7 @@ li {
   border: none;
   color: var(--btnFontColor);
   background-color: var(--btnBg);
+  cursor: pointer;
 }
 
 .btn:focus {
