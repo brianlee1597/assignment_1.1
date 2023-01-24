@@ -22,8 +22,24 @@
   color: var(--fontColor);
   font-family: helvetica;
 }
+
 body {
+  width: 100%;
+  min-height: 100vh;
   background: var(--bg);
+  display: grid;
+  place-items: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px;
+  width: 300px;
+  min-height: fit-content;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  align-items: center;
 }
 
 ul {
@@ -32,6 +48,7 @@ ul {
 
 img {
   width: 200px;
+  border-radius: 10px;
 }
 
 li {
@@ -47,7 +64,6 @@ li {
 }
 
 .btn {
-  position: absolute;
   top: 20px;
   left: 250px;
   height: 50px;
