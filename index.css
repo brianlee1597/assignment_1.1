@@ -36,6 +36,8 @@ body {
   background: var(--bg);
   display: grid;
   place-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 #container {
